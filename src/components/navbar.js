@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <div className="flex justify-center p-4 text-sm lg:justify-between">
       {/* Logo Container */}
-      <div className="flex space-x-4 items-center font-medium">
+      <div className="flex space-x-4 items-center font-medium cursor-pointer">
         <div className="flex h-6 w-auto sm:justify-center">
           <Logo />
         </div>

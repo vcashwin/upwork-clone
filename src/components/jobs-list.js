@@ -24,7 +24,7 @@ function JobsList() {
           }
         />
       </div>
-      <div className="p-8 hover:bg-[#F2F7F2] cursor-pointer">
+      <div className="p-8 hover:bg-[#F2F7F2] cursor-pointer rounded-b-2xl">
         <JobCard
           title={"Frontend developer for React App with skills in Tailwind CSS"}
           description={
