@@ -28,6 +28,22 @@ function Navbar() {
 
       {/* Search Container */}
       <div className="hidden items-center lg:flex">
+        <div className="flex items-center border-2 border-[#F2F7F2] rounded-full hover:bg-[#F2F7F2] group">
+          <div className="flex items-center space-x-1 font-medium rounded-full hover:bg-white py-2 px-4 group/search border-2 border-white group-hover:border-[#F2F7F2] group-hover/search:border-white">
+            <div className="w-5 h-5">
+              <SearchIcon />
+            </div>
+            <input
+              className="placeholder:text-black group-hover:bg-[#F2F7F2] group-hover/search:bg-white outline-0"
+              placeholder="Search"
+            ></input>
+          </div>
+          <div className="group/divider h-5 border-[0.75px] w-0 group-hover:border-[#F2F7F2] group-focus/search:"></div>
+          <button className="group/jobs flex items-center space-x-0.5 font-medium rounded-full hover:bg-white py-2 px-4  border-2 border-white group-hover:border-[#F2F7F2] group-hover/jobs:border-white focus:border-[#9AAA97]">
+            <span>Jobs</span>
+            <FiChevronDown />
+          </button>
+        </div>
         <button className="w-11 h-11 p-[10px]">
           <HelpIcon />
         </button>
@@ -169,4 +185,25 @@ function NotificationIcon() {
   );
 }
 
+function SearchIcon() {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      aria-hidden="true"
+      viewBox="0 0 24 24"
+      role="img"
+    >
+      <path
+        vector-effect="non-scaling-stroke"
+        stroke="var(--icon-color, #001e00)"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-miterlimit="10"
+        stroke-width="1.5"
+        d="M10.688 18.377a7.688 7.688 0 100-15.377 7.688 7.688 0 000 15.377zm5.428-2.261L21 21"
+      ></path>
+    </svg>
+  );
+}
 export default Navbar;
