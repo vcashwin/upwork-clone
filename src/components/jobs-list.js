@@ -16,7 +16,7 @@ function JobsList() {
         Browse the most recent jobs that match your skills and profile
         description to the skills clients are looking for.
       </p>
-      <div className="p-8 border-b hover:bg-[#F2F7F2]">
+      <div className="p-8 border-b hover:bg-[#F2F7F2] cursor-pointer">
         <JobCard
           title={"Frontend developer for React App with skills in Tailwind CSS"}
           description={
@@ -24,7 +24,7 @@ function JobsList() {
           }
         />
       </div>
-      <div className="p-8 hover:bg-[#F2F7F2]">
+      <div className="p-8 hover:bg-[#F2F7F2] cursor-pointer">
         <JobCard
           title={"Frontend developer for React App with skills in Tailwind CSS"}
           description={

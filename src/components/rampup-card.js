@@ -2,7 +2,7 @@ import React from "react";
 
 function RampupCard() {
   return (
-    <div className="font-sans hidden lg:flex w-3/5 space-x-4 items-center bg-[rgb(31,87,195)] rounded-2xl px-14 min-h-[198px]">
+    <div className="font-sans hidden lg:flex space-x-4 items-center bg-[rgb(31,87,195)] rounded-2xl px-14">
       {/* Image */}
       <div className="w-36 h-auto m-4">
         <RocketSVG />
