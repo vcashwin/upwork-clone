@@ -10,7 +10,7 @@ function RampupCard() {
       {/* Description */}
       <div className="flex-1 flex-col w-48 text-white space-y-2">
         <h1 className="text-2xl font-medium">Join the RampUp Challenge</h1>
-        <p className="text-sm font-medium">
+        <p className="text-sm">
           There are multiple ways to get started on Upwork, try participating in
           this challenge to earn Connects and get a head start on actions that
           could set you up for success!
