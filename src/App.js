@@ -2,6 +2,7 @@ import JobsList from "./components/jobs-list";
 import Navbar from "./components/navbar";
 import RampupCard from "./components/rampup-card";
 import OptionsCard from "./components/options-card";
+import Footer from "./components/footer";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         </div>
         <OptionsCard />
       </div>
+      <Footer />
     </div>
   );
 }
