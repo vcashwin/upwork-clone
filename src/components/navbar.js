@@ -1,13 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import { FiChevronDown } from "react-icons/fi";
 
 function Navbar() {
   return (
     <div className="flex justify-center p-4 text-sm lg:justify-between">
       {/* Logo Container */}
-      <div className="flex space-x-4 items-center font-medium cursor-pointer">
-        <div className="flex h-6 w-auto sm:justify-center">
+      <div className="flex space-x-4 items-center font-medium cursor-pointer flex-1 lg:flex-none justify-between">
+        <div className="items-center lg:hidden">
+          <HamburgerMenuButton />
+        </div>
+        <div className="flex h-6 w-auto">
           <Logo />
+        </div>
+        <div className="items-center lg:hidden w-6 h-6">
+          <SearchIcon />
         </div>
         <div className="hidden items-center space-x-0.5 lg:flex">
           <span>Find Work</span>
@@ -60,6 +66,69 @@ function Navbar() {
         />
       </div>
     </div>
+  );
+}
+
+function HamburgerMenuButton({ cssProps }) {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const customCss = `flex items-center p-2 ${cssProps}`;
+
+  return (
+    <button className={customCss} onClick={() => setIsOpen(!isOpen)}>
+      {isOpen ? (
+        <svg
+          className="w-6 h-6"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M18 6L6 18"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+          <path
+            d="M6 6L18 18"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </svg>
+      ) : (
+        <svg
+          className="w-6 h-6"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M3 18H21"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+          <path
+            d="M3 6H21"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+          <path
+            d="M3 12H21"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </svg>
+      )}
+    </button>
   );
 }
 
