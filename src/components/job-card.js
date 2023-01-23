@@ -54,9 +54,6 @@ function JobCard({ title, description }) {
           Web Design
         </p>
         <p className="rounded-full text-gray-500 bg-[#E3EBE4] p-1 px-2">CSS</p>
-        <p className="rounded-full text-gray-500 bg-[#E3EBE4] p-1 px-2">
-          React JS
-        </p>
       </div>
 
       {/* Payment Row */}
